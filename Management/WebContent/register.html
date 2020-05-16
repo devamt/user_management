@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style> 
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
+
+form{
+	   
+       position: relative;
+       z-index: 1;
+       background: lightblue;
+       max-width: 360px;
+       margin: 0 auto 100px;
+       padding: 45px;
+       text-align: center;
+}
+
+.textbox i{
+       margin: 30px 640px 0;
+}
+
+form input{
+       outline : 1;
+       width: 60%;
+       box-sizing: border-box;
+       padding: 15px;
+       
+}
+
+.button{
+        	width: 100%;
+        	background: none;
+        	border : 2px solid;
+        	color: black;
+        	font-size: 18px;
+        	
+        }
+        
+        .select{
+            outline : 1;
+       width: 60%;
+       box-sizing: border-box;
+       padding: 15px;     
+        }
+        
+</style>
+
+</head>
+<body>
+              <div class="textbox">
+              	<i class="fa fa-user fa-5x" aria-hidden="true"></i> 
+              </div>
+
+
+<form action="register.jsp" method="post">
+Enter Username : <input type="text" placeholder="USERNAME" name="user2"> <br><br>
+Enter Password &nbsp: <input type="password" placeholder="PASSWORD" name="psw2"><br> <br>
+&nbsp Full Name &nbsp:  &nbsp &nbsp &nbsp <input type="text" placeholder="name" name="name2"> <br><br>
+
+EMAIL-ID &nbsp:&nbsp &nbsp &nbsp <input type="email" placeholder="EMAIL" name="email2"> <br><br>
+
+PHONE-NO &nbsp:&nbsp &nbsp  <input type="number" placeholder="Phone number" name="phone2"> <br><br>
+
+ADDRESS &nbsp:&nbsp &nbsp &nbsp <input type="text" placeholder="ADDRESS" name="add2"> <br><br>
+ 
+ 
+<br><br><br> <input class="button" type="submit" name="" value="REGISTER"> <br> <br>
+
+<a href="index.html"> LOG IN Click Here!</a>
+</form>
+
+</body>
+</html>

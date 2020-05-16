@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>update password</title>
+
+<style> 
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
+
+form{
+	   
+       position: relative;
+       z-index: 1;
+       background: lightblue;
+       max-width: 360px;
+       margin: 0 auto 100px;
+       padding: 45px;
+       text-align: center;
+}
+
+.textbox i{
+       margin: 30px 640px 0;
+}
+
+form input{
+       outline : 1;
+       width: 70%;
+       box-sizing: border-box;
+       padding: 15px;
+       
+}
+
+.button{
+        	width: 100%;
+        	background: none;
+        	border : 2px solid;
+        	color: black;
+        	font-size: 18px;
+        	
+        }
+        
+        
+</style>
+
+</head>
+<body>
+
+        <div class="textbox">
+       	<i class="fa fa-user fa-5x" aria-hidden="true"></i> 
+        </div>
+
+<form action="u_pass.jsp" method ="post" >
+<input type="password" placeholder=" CURRENT &nbsp PASSWORD" name="pass3"> <br><br>
+<input type="password" placeholder="NEW &nbsp PASSWORD" name="pass4"> <br><br>
+<input type="password" placeholder="CONFIRM &nbsp PASSWORD" name ="pass5"> <br><br>
+
+  <input class="button" type="submit" name="" value="UPDATE"> <br> <br>
+  
+<a href="welcome_1.jsp"> BACK</a>
+
+</form>
+</body>
+</html>

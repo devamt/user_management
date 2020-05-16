@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style> 
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
+
+form{
+	   
+       position: relative;
+       z-index: 1;
+       background: lightblue;
+       max-width: 360px;
+       margin: 0 auto 100px;
+       padding: 45px;
+       text-align: center;
+}
+
+.textbox i{
+       margin: 30px 640px 0;
+}
+
+form input{
+       outline : 1;
+       width: 60%;
+       box-sizing: border-box;
+       padding: 15px;
+       
+}
+
+.button{
+        	width: 100%;
+        	background: none;
+        	border : 2px solid;
+        	color: black;
+        	font-size: 18px;
+        	
+        }
+        
+        .select{
+            outline : 1;
+       width: 60%;
+       box-sizing: border-box;
+       padding: 15px;     
+        }
+        
+</style>
+
+</head>
+<body>
+              <div class="textbox">
+              	<i class="fa fa-user fa-5x" aria-hidden="true"></i> 
+              </div>
+
+
+<form action="update_task.jsp" method="post">
+&nbsp Task ID &nbsp:  &nbsp &nbsp &nbsp <input type="text" placeholder="Task ID" name="tid"> <br><br>
+
+Task Topic &nbsp:&nbsp &nbsp &nbsp <input type="text" placeholder="Task Topic" name="topic"> <br><br>
+
+Task Description &nbsp :&nbsp &nbsp  <input type="text" placeholder="Task Description" name="des"> <br><br>
+
+Date &nbsp &nbsp &nbsp: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type=date name=dates> 
+
+<br> <br> Priority &nbsp &nbsp &nbsp: &nbsp &nbsp &nbsp &nbsp <select name="priority" style="width:190px"> 
+   <option value="LOW"> LOW </option>  
+   <option value="MEDIUM"> MEDIUM </option>
+   <option value="HIGH"> HIGH </option>   
+ </select>
+ 
+ 
+<br><br><br> <input class="button" type="submit" name="" value="UPDATE"> <br> <br>
+
+
+
+</form>
+
+</body>
+</html>
